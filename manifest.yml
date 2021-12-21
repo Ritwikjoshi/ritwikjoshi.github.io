@@ -1,0 +1,7 @@
+applications:
+- path: .
+  memory: 128M
+  instances: 1
+  name: harshalgiri
+  buildpack: https://github.com/cloudfoundry/php-buildpack.git#v4.3.51
+  disk_quota: 1024M
