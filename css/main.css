@@ -3049,7 +3049,7 @@ body.mobile-nav-active #mobile-nav-toggle {
         -o-transition: all 0.3s ease 0s;
         transition: all 0.3s ease 0s; }
         .widget-wrap .user-info-widget .social-links li a:hover {
-          color: #e45447; }
+          color: #3de959; }
   .widget-wrap .popular-post-widget .popular-title {
     background: #e45447;
     color: #fff;
@@ -3167,7 +3167,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s; }
     .widget-wrap .tag-cloud-widget ul li:hover {
-      background: #e45447; }
+      background: #3de959; }
       .widget-wrap .tag-cloud-widget ul li:hover a {
         color: #fff; }
     .widget-wrap .tag-cloud-widget ul li a {
@@ -3198,7 +3198,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s; }
     .single-post-area .social-links li a:hover {
-      color: #e45447; }
+      color: #3de959; }
 .single-post-area .quotes {
   margin-top: 20px;
   padding: 30px;
@@ -3303,7 +3303,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s; }
     .comments-area .btn-reply:hover {
-      background-color: #e45447;
+      background-color: #3de959;
       color: #fff; }
 
 .comment-form {
@@ -3388,12 +3388,12 @@ body.mobile-nav-active #mobile-nav-toggle {
           .footer-area .footer-social a i {
             font-size: 25px; } }
         .footer-area .footer-social a i:hover {
-          color: #e45447; }
+          color: #3de959; }
   .footer-area .footer-bottom {
     text-align: center; }
     .footer-area .footer-bottom p {
       margin-bottom: 0; }
     .footer-area .footer-bottom a {
-      color: #e45447; }
+      color: #3de959; }
 
 /*# sourceMappingURL=main.css.map */
