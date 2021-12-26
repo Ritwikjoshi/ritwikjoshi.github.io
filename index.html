@@ -30,7 +30,6 @@
 	<link rel="stylesheet" href="css/animate.min.css">
 	<link rel="stylesheet" href="css/owl.carousel.css">
 	<link rel="stylesheet" href="css/main.css">
-	
 </head>
 
 <body>
@@ -82,18 +81,27 @@
 	<!-- End Header Area -->
 
 
+
 	<!-- start banner Area -->
 	<section class="home-banner-area">
 		<div class="container">
 			<div class="row fullscreen d-flex align-items-center">
 				<div class="banner-content col-lg-6 col-md-12 justify-content-center ">
+
+					<lottie-player style="position: absolute; top: 20px; left: -100px; z-index: 1;" src="https://assets5.lottiefiles.com/packages/lf20_4aep2qf0.json"  background="transparent"  speed="1"  style="width: 400px; height: 300px;" hover></lottie-player>
+
 					<div class="me wow fadeInDown" data-wow-duration="1s" data-wow-delay="1.2s">It's me</div>
 					<h1 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.7s">Ritwik Joshi</h1>
 					<div class="designation mb-50 wow fadeInUp" data-wow-duration="1s" data-wow-delay="2.1s">
 						Co-Founder at 
 						<a href="https://www.botosynthesis.ai" target="_blank"><span class="designer">Botosynthesis</span></a>
 						and 
-						<span class="designer">a Learner</span>
+						<span
+						     class="txt-rotate designer"
+						     data-period="1000"
+						     data-rotate='[ "an Enterpreneur.🚀","a Learner.📖", "a Musician.🎸", "a Programmer.🛠", "a Public Speaker.🎙", "a Coffee Lover.☕️" ]'>
+						 </span>
+						
 					</div>
 					<!--<a href="#" class="primary-btn" data-text="Take Personal Training">
 						<span>T</span>
@@ -189,6 +197,65 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	<script src="js/mail-script.js"></script>
 	<script src="js/wow.min.js"></script>
 	<script src="js/main.js"></script>
+	<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+	<script type="text/javascript">
+		
+
+var TxtRotate = function(el, toRotate, period) {
+  this.toRotate = toRotate;
+  this.el = el;
+  this.loopNum = 0;
+  this.period = parseInt(period, 10) || 2000;
+  this.txt = '';
+  this.tick();
+  this.isDeleting = false;
+};
+
+TxtRotate.prototype.tick = function() {
+  var i = this.loopNum % this.toRotate.length;
+  var fullTxt = this.toRotate[i];
+
+  if (this.isDeleting) {
+    this.txt = fullTxt.substring(0, this.txt.length - 1);
+  } else {
+    this.txt = fullTxt.substring(0, this.txt.length + 1);
+  }
+
+  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+  var that = this;
+  var delta = 300 - Math.random() * 100;
+
+  if (this.isDeleting) { delta /= 2; }
+
+  if (!this.isDeleting && this.txt === fullTxt) {
+    delta = this.period;
+    this.isDeleting = true;
+  } else if (this.isDeleting && this.txt === '') {
+    this.isDeleting = false;
+    this.loopNum++;
+    delta = 500;
+  }
+
+  setTimeout(function() {
+    that.tick();
+  }, delta);
+};
+
+window.onload = function() {
+  var elements = document.getElementsByClassName('txt-rotate');
+  for (var i=0; i<elements.length; i++) {
+    var toRotate = elements[i].getAttribute('data-rotate');
+    var period = elements[i].getAttribute('data-period');
+    if (toRotate) {
+      new TxtRotate(elements[i], JSON.parse(toRotate), period);
+    }
+  }
+  
+};
+
+
+	</script>
 </body>
 
 </html>
