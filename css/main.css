@@ -2239,7 +2239,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /*-------- End About Area ------------*/
 /*--------- Start Work Area -------------*/
 .work-area {
-  background: #a5bcd9; }
+  background: #fff; }
   @media (max-width: 1024px) {
     .work-area .row.mb-80 {
       margin-bottom: 30px; } }
