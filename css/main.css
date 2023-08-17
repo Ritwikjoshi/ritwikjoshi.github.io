@@ -1862,7 +1862,8 @@ h1, h2, h3, h4, h5, h6 {
 #header.header-scrolled {
   position: fixed;
   box-shadow: -21.213px 21.213px 30px 0px rgba(158, 158, 158, 0.3);
-  background: #fff;
+  background: #3DE959;
+  
   transition: all 0.5s; }
   #header.header-scrolled #nav-menu-container {
     margin-left: auto; }
@@ -1966,8 +1967,9 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: capitalize;
   outline: none;
   font-family: "Poppins", sans-serif; }
-  .nav-menu a.active, .nav-menu a:hover {
-    color: #3DE959 !important; }
+  .nav-menu a.active{color: #FFF !important;}
+  .nav-menu a:hover {
+    color: #fff !important;}
 .nav-menu.white a {
   color: #fff; }
 
